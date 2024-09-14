@@ -142,7 +142,7 @@ export default function ViewTrackDetails() {
             step="1"
             value={Number(formData.year)}
             onChange={(e) => {
-              setFormData({ ...formData, album: e.currentTarget.value });
+              setFormData({ ...formData, year: Number(e.currentTarget.value) });
             }}
           />
         </Setting.Section>
@@ -156,7 +156,10 @@ export default function ViewTrackDetails() {
             disabled={true}
             value={formData.duration}
             onChange={(e) => {
-              setFormData({ ...formData, album: e.currentTarget.value });
+              setFormData({
+                ...formData,
+                duration: Number(e.currentTarget.value),
+              });
             }}
           />
         </Setting.Section>
