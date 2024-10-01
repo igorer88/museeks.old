@@ -17,7 +17,6 @@ import useInvalidate from '../hooks/useInvalidate';
 import type { LoaderData } from '../types/museeks';
 import appStyles from './Root.module.css';
 import styles from './ViewTrackDetails.module.css';
-import type { LoaderData } from './router';
 import { formatDuration } from '../lib/utils-library';
 import Flexbox from '../elements/Flexbox/Flexbox';
 
